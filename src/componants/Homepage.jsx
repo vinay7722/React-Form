@@ -18,6 +18,7 @@ const Homepage = () => {
         return response.json();
       })
       .then((myJson) => {
+        
         setData(myJson);
       });
   };
@@ -27,7 +28,7 @@ const Homepage = () => {
   });
 
   return (
-    <TableContainer component={Paper}>
+<TableContainer component={Paper}>
       <Table aria-label="simple table">
         <TableHead>
           <TableRow>
